@@ -1,0 +1,554 @@
+/*!
+ * Project: KISS - Keep It Simple Stylesheets
+ * Description: A simple, lightweight CSS framework designed for ease of use.
+ * Author: Niko Hoffrén
+ * License: MIT
+ * Version: 0.1.0
+ */
+
+/* ============= Normalize or Reset Styles ============= */
+
+/* Remove default padding and margin from all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ========== Base Styles (typography, colors etc) ========== */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #303030;
+}
+
+/* Define primary, secondary and accent colors */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --accent-color: #28a745;
+    --red-color: #f44336;
+    --blue-color: #2196f3;
+    --green-color: #4caf50;
+    --yellow-color: #ffeb3b;
+
+    /* Gradient colors */
+    --gradient-primary: linear-gradient(45deg, #007bff, #6610f2);
+    --gradient-secondary: linear-gradient(45deg, #6c757d, #343a40);
+    --gradient-accent: linear-gradient(45deg, #28a745, #218838);
+}
+
+/* =========== Header Styles =========== */
+
+/* Base header style */
+.header {
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+    color: #303030;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Large header */
+.header--large {
+    font-size: 2.5em;
+    margin-bottom: 1rem;
+}
+
+/* Medium header */
+.header--medium {
+    font-size: 2em;
+    margin-bottom: 0.75rem;
+}
+
+/* Small header */
+.header--small {
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+/* Header with primary color */
+.header--primary {
+    color: var(--primary-color);
+}
+
+/* Header with secondary color */
+.header--secondary {
+    color: var(--secondary-color);
+}
+
+/* ============ Grid System ============ */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Large container max-width is 1400px */
+.container--large {
+    max-width: 1400px;
+}
+
+/* Medium container max-width is 960px */
+.container--medium {
+    max-width: 960px;
+}
+
+/* Small container max-width is 720px */
+.container--small {
+    max-width: 720px;
+}
+
+/* Extra small container max-width is 540px */
+.container--extra-small {
+    max-width: 540px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+}
+
+/* =========== Component Styles =========== */
+
+/* =========== Additional Button Styles =========== */
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: var(--primary-color);
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Button sizes */
+.button--large {
+    padding: 15px 30px;
+    font-size: 1.2em;
+}
+
+.button--small {
+    padding: 5px 10px;
+    font-size: 0.8em;
+}
+
+/* Button with secondary color */
+.button--secondary {
+    background-color: var(--secondary-color);
+}
+
+/* Button with accent color */
+.button--accent {
+    background-color: var(--accent-color);
+}
+
+/* Outlined button */
+.button--outlined {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Rounded button */
+.button--rounded {
+    border-radius: 50px;
+}
+
+.button--gradient-primary {
+    background: var(--gradient-primary);
+}
+
+.button--gradient-secondary {
+    background: var(--gradient-secondary);
+}
+
+.button--gradient-accent {
+    background: var(--gradient-accent);
+}
+
+/* Pulse Buttons */
+.btn-floating {
+    position: relative;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* =========== Button Hover Styles =========== */
+
+/* Change color and add shadow on hover */
+.button:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button--secondary:hover {
+    background-color: var(--primary-color);
+}
+
+.button--accent:hover {
+    background-color: var(--secondary-color);
+}
+
+.button--outlined:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+/* Change gradient color on hover */
+.button--gradient-primary:hover {
+    background: var(--gradient-accent);
+}
+
+.button--gradient-secondary:hover {
+    background: var(--gradient-primary);
+}
+
+.button--gradient-accent:hover {
+    background: var(--gradient-secondary);
+}
+
+/* =========== Utility Classes =========== */
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+/* Margin Classes */
+.m-1 {
+    margin: 0.25rem;
+}
+
+.m-2 {
+    margin: 0.5rem;
+}
+
+.m-3 {
+    margin: 0.75rem;
+}
+
+.m-4 {
+    margin: 1rem;
+}
+
+.m-5 {
+    margin: 1.25rem;
+}
+
+.m-6 {
+    margin: 1.5rem;
+}
+
+.m-7 {
+    margin: 1.75rem;
+}
+
+.m-8 {
+    margin: 2rem;
+}
+
+.m-9 {
+    margin: 2.25rem;
+}
+
+.m-10 {
+    margin: 2.5rem;
+}
+
+/* Padding Classes */
+.p-1 {
+    padding: 0.25rem;
+}
+
+.p-2 {
+    padding: 0.5rem;
+}
+
+.p-3 {
+    padding: 0.75rem;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.p-5 {
+    padding: 1.25rem;
+}
+
+.p-6 {
+    padding: 1.5rem;
+}
+
+.p-7 {
+    padding: 1.75rem;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.p-9 {
+    padding: 2.25rem;
+}
+
+.p-10 {
+    padding: 2.5rem;
+}
+
+/* Shadow Classes */
+.shadow-1 {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-2 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-3 {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-4 {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-5 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ============ Border Radius Classes ============ */
+
+/* Small border radius */
+.border-radius-sm {
+    border-radius: 5px;
+}
+
+/* Medium border radius */
+.border-radius-md {
+    border-radius: 10px;
+}
+
+/* Large border radius */
+.border-radius-lg {
+    border-radius: 20px;
+}
+
+/* Circle border radius */
+.border-radius-circle {
+    border-radius: 50%;
+}
+
+/* Pill border radius */
+.border-radius-pill {
+    border-radius: 50rem;
+}
+
+/* =========== Additional Component Styles =========== */
+
+/* Card component */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.card .card-header {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.card .card-body {
+    font-size: 1em;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Side Navbar */
+.side-navbar {
+    background-color: var(--primary-color);
+    color: white;
+    width: 200px;
+    padding: 20px;
+}
+
+.side-navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-navbar li {
+    margin-bottom: 10px;
+}
+
+.side-navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.side-navbar a:hover {
+    text-decoration: underline;
+}
+
+/* =========== Form Styles =========== */
+
+/* Form Group styling */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Label styling */
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+/* Input styling */
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Input focus effect */
+.form-input:focus {
+    border-color: var(--primary-color);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* =========== Additional Utility Classes =========== */
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Hiding/Showing Content */
+.hide {
+    display: none !important;
+}
+
+.hide-on-small-only {
+    display: none !important;
+}
+
+.hide-on-med-only {
+    display: block !important;
+}
+
+.hide-on-med-and-down {
+    display: block !important;
+}
+
+.hide-on-med-and-up {
+    display: none !important;
+}
+
+.hide-on-large-only {
+    display: block !important;
+}
+
+.show-on-small {
+    display: block !important;
+}
+
+.show-on-medium {
+    display: none !important;
+}
+
+.show-on-large {
+    display: none !important;
+}
+
+.show-on-medium-and-up {
+    display: none !important;
+}
+
+.show-on-medium-and-down {
+    display: block !important;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KISS - Keep It Simple Stylesheets</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="text-center">
+            <h1 class="header header--large header--secondary">
+                Welcome to KISS
+            </h1>
+            <p>
+                KISS is a simple, lightweight CSS framework designed for ease of
+                use. Below are some examples of components you can build using
+                KISS.
+            </p>
+            <br />
+
+            <!-- Component examples -->
+
+            <!-- Header Components -->
+            <h1 class="header header--large">Large Header</h1>
+            <h2 class="header header--medium header--primary">
+                Medium Primary Color Header
+            </h2>
+            <h3 class="header header--small header--secondary">
+                Small Secondary Color Header
+            </h3>
+
+            <!-- Button Components -->
+            <div class="mt-2">
+                <a href="#" class="button">This is a normal button</a>
+                <a href="#" class="button button--gradient-primary"
+                    >Gradient Primary Button</a
+                >
+                <a href="#" class="button button--gradient-secondary"
+                    >Gradient Secondary Button</a
+                >
+                <a href="#" class="button button--gradient-accent"
+                    >Gradient Accent Button</a
+                >
+
+                <a href="#" class="button button--large shadow-5">Large Button</a>
+                <a href="#" class="button button--small button--secondary"
+                    >Small Secondary Button</a
+                >
+                <a href="#" class="button button--accent"
+                    >Accent Color Button</a
+                >
+                <a href="#" class="button button--outlined">Outlined Button</a>
+                <a href="#" class="button button--rounded">Rounded Button</a>
+
+                <a href="#" class="m-3 btn-floating button pulse shadow-3">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <a href="#" class="m-3 btn-floating button button--large pulse">
+                    <i class="material-icons">cloud</i>
+                </a>
+
+                <a href="#" class="m-3 btn-floating button button--large cyan pulse">
+                    <i class="material-icons">edit</i>
+                </a>
+            </div>
+
+            <!-- Card Component -->
+            <div class="card">
+                <h2 class="card-header">Card Header</h2>
+                <p class="card-body">
+                    This is some card content. It's a brief description of the
+                    content on the card.
+                </p>
+            </div>
+
+            <!-- Navbar Components -->
+            <div class="navbar">
+                <div class="container">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <br />
+
+            <div class="side-navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Container with a small border radius -->
+            <div class="container border-radius-sm">
+                <h2>Container with small border radius</h2>
+                <p>This container has a small border radius applied to it.</p>
+            </div>
+
+            <!-- Container with a medium border radius -->
+            <div class="container border-radius-md">
+                <h2>Container with medium border radius</h2>
+                <p>This container has a medium border radius applied to it.</p>
+            </div>
+
+            <!-- Container with a large border radius -->
+            <div class="container border-radius-lg">
+                <h2>Container with large border radius</h2>
+                <p>This container has a large border radius applied to it.</p>
+            </div>
+
+            <!-- Element that is a circle -->
+            <div class="center">
+                <div
+                    class="border-radius-circle"
+                    style="
+                        width: 100px;
+                        height: 100px;
+                        background-color: var(--primary-color);
+                    "
+                ></div>
+            </div>
+
+            <!-- Button with pill-shaped border radius -->
+            <button class="button border-radius-pill">
+                Pill-shaped button
+            </button>
+
+            <!-- Form Input Component -->
+            <div class="container mt-2">
+                <h2 class="header header--medium">Contact Form</h2>
+                <form>
+                    <!-- Text Input -->
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input
+                            type="text"
+                            id="name"
+                            class="form-input"
+                            placeholder="Enter your name"
+                        />
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            class="form-input"
+                            placeholder="Enter your email"
+                        />
+                    </div>
+
+                    <!-- Select Input -->
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <select id="subject" class="form-input">
+                            <option value="">
+                                --Please choose an option--
+                            </option>
+                            <option value="question">Question</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Textarea Input -->
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea
+                            id="message"
+                            class="form-input"
+                            placeholder="Enter your message"
+                        ></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-group">
+                        <button
+                            type="submit"
+                            class="button button--large button--primary"
+                        >
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Helpers -->
+            <div class="hide-on-small-only">
+                <!-- Content hidden on mobile devices -->
+                <h1>Content hidden on mobile devices</h1>
+            </div>
+
+            <div class="show-on-medium-and-up">
+                <!-- Content shown on tablet and larger screen sizes -->
+                <h1>Content shown on tablet and larger screen sizes</h1>
+            </div>
+        </div>
+    </body>
+</html>
