@@ -18,6 +18,7 @@ You can include KISS in your project by downloading the `styles.css` file from t
 
 ```html
 <link rel="stylesheet" href="path/to/styles.css">
+```
 
 ### Usage
 
