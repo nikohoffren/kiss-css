@@ -22,7 +22,7 @@ npm install kiss-css
 Once you've installed the kiss-css package, you can include the CSS file in your HTML file by linking it in the <head> section:
 
 ```html
-<link rel="stylesheet" href="path/to/styles.css">
+<link rel="stylesheet" href="node_modules/kiss-css/styles.css">
 ```
 
 ### Usage
