@@ -1,0 +1,22 @@
+{
+  "name": "kiss-css",
+  "version": "1.0.0",
+  "description": "KISS (Keep It Simple Stylesheets) is a simple, lightweight CSS framework designed for ease of use. It provides a collection of reusable CSS classes and components to quickly style your web projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikohoffren/kiss-css.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "Niko Hoffrén",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nikohoffren/kiss-css/issues"
+  },
+  "homepage": "https://github.com/nikohoffren/kiss-css#readme"
+}
