@@ -14,7 +14,12 @@ KISS (Keep It Simple Stylesheets) is a simple, lightweight CSS framework designe
 
 ### Installation
 
-You can include KISS in your project by downloading the `styles.css` file from the [KISS repository](https://github.com/nikohoffren/kiss-css) and linking it in your HTML file:
+To include KISS in your project, you can install the `kiss-css` package using npm. Open your terminal or command prompt and navigate to your project directory, then run the following command:
+
+```bash
+npm install kiss-css
+```
+Once you've installed the kiss-css package, you can include the CSS file in your HTML file by linking it in the <head> section:
 
 ```html
 <link rel="stylesheet" href="path/to/styles.css">
@@ -22,7 +27,7 @@ You can include KISS in your project by downloading the `styles.css` file from t
 
 ### Usage
 
-KISS provides a set of CSS classes that you can apply to your HTML elements. Here's an example of how to use some of the classes:
+Now, you can start using the CSS classes provided by KISS in your HTML elements. Here's an example of how to use some of the classes:
 
 ```html
 <div class="container">
