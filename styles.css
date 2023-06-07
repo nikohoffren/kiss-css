@@ -48,6 +48,33 @@ h6 {
     --gradient-accent: linear-gradient(45deg, #28a745, #218838);
 }
 
+/* ========== Font Families ========== */
+
+/* Serif Fonts */
+.serif {
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Sans-Serif Fonts */
+.sans-serif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Monospace Fonts */
+.monospace {
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* Cursive Fonts */
+.cursive {
+    font-family: "Brush Script MT", cursive;
+}
+
+/* Fantasy Fonts */
+.fantasy {
+    font-family: "Impact", fantasy;
+}
+
 /* =========== Header Styles =========== */
 
 /* Base header style */
@@ -492,6 +519,67 @@ h6 {
     border-color: var(--primary-color);
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Select styling */
+.form-select {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Textarea styling */
+.form-textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Checkbox styling */
+.form-checkbox {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+/* Radio button styling */
+.form-radio {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+/* Form button styling */
+.form-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+}
+
+/* Form button hover effect */
+.form-button:hover {
+    background-color: var(--primary-color-hover);
 }
 
 /* =========== Additional Utility Classes =========== */
