@@ -4,11 +4,11 @@ KISS (Keep It Simple Stylesheets) is a simple, lightweight CSS framework designe
 
 ## Features
 
-- Normalize or reset styles for consistent rendering across browsers
-- Base styles for typography, colors, and layout
-- Responsive grid system for building flexible layouts
-- Components like buttons, cards, forms, and navigation
-- Utility classes for margin, padding, shadows, and more
+-   Normalize or reset styles for consistent rendering across browsers
+-   Base styles for typography, colors, and layout
+-   Responsive grid system for building flexible layouts
+-   Components like buttons, cards, forms, and navigation
+-   Utility classes for margin, padding, shadows, and more
 
 ## Getting Started
 
@@ -19,10 +19,11 @@ To include KISS in your project, you can install the `kiss-css` package using np
 ```bash
 npm install kiss-css
 ```
+
 Once you've installed the kiss-css package, you can include the CSS file in your HTML file by linking it in the <head> section:
 
 ```html
-<link rel="stylesheet" href="node_modules/kiss-css/styles.css">
+<link rel="stylesheet" href="node_modules/kiss-css/styles.css" />
 ```
 
 ### Usage
@@ -30,10 +31,15 @@ Once you've installed the kiss-css package, you can include the CSS file in your
 Now, you can start using the CSS classes provided by KISS in your HTML elements. Here's an example of how to use some of the classes:
 
 ```html
-<div class="container">
+<div class="container mt-2">
     <h1 class="header">Welcome to KISS</h1>
-    <p>KISS is a simple, lightweight CSS framework designed for ease of use. Below are some examples of components you can build using KISS.</p>
-    <a href="#" class="button">Get Started</a>
+    <p class="center">
+        KISS is a simple, lightweight CSS framework designed for ease of use.
+        Below are some examples of components you can build using KISS.
+    </p>
+    <div class="center mt-1">
+        <a href="#" class="button">Get Started</a>
+    </div>
 </div>
 ```
 
