@@ -552,3 +552,18 @@ h6 {
 .show-on-medium-and-down {
     display: block !important;
 }
+
+/* Scale Transition */
+.scale-transition {
+    transition: transform 0.3s ease;
+}
+
+/* Scale In */
+.scale-transition.scale-in {
+    transform: scale(1);
+}
+
+/* Scale Out */
+.scale-transition.scale-out {
+    transform: scale(0);
+}
