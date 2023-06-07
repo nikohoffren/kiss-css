@@ -567,3 +567,15 @@ h6 {
 .scale-transition.scale-out {
     transform: scale(0);
 }
+
+/* Apply focus styles to focused elements */
+:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+/* Add focus styles to specific elements */
+.button:focus,
+.link:focus {
+    /* Custom focus styles for buttons and links */
+    outline: 2px solid var(--secondary-color);
+}

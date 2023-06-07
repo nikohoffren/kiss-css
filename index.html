@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>KISS - Keep It Simple Stylesheets</title>
         <link rel="stylesheet" href="styles.css" />
-        <script src="index.js"></script>
-        <script src="utils/toggle-button.js"></script>
+        <script src="index.js" defer></script>
+        <script src="/utils/toggle-button.js" defer></script>
     </head>
     <body>
         <div class="text-center">
@@ -207,13 +207,42 @@
                 <h1>Content shown on tablet and larger screen sizes</h1>
             </div>
 
-            <a id="toggle-button" href="#!" class="button mb-1">Toggle Buttons</a>
+            <a id="toggle-button" href="#!" class="button mb-1"
+                >Toggle Buttons</a
+            >
 
             <div id="buttons-container" class="mb-1 scale-transition scale-out">
                 <a href="#!" class="button">Button 1</a>
                 <a href="#!" class="button">Button 2</a>
                 <a href="#!" class="button">Button 3</a>
             </div>
+
+            <!-- Example of a menu with ARIA attributes -->
+            <nav role="navigation" aria-label="Main Menu">
+                <ul class="menu">
+                    <li role="menuitem" tabindex="0">
+                        <a href="#">Home</a>
+                    </li>
+                    <li role="menuitem" tabindex="0">
+                        <a href="#">About</a>
+                    </li>
+                    <li role="menuitem" tabindex="0">
+                        <a href="#">Services</a>
+                    </li>
+                    <li role="menuitem" tabindex="0">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Example of a toggle button with ARIA attributes -->
+            <button
+                class="toggle-button"
+                aria-label="Toggle"
+                aria-expanded="false"
+            >
+                <span class="toggle-icon"></span>
+            </button>
         </div>
     </body>
 </html>
