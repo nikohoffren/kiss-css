@@ -24,11 +24,13 @@ You can include KISS in your project by downloading the `styles.css` file from t
 
 KISS provides a set of CSS classes that you can apply to your HTML elements. Here's an example of how to use some of the classes:
 
+```html
 <div class="container">
     <h1 class="header">Welcome to KISS</h1>
     <p>KISS is a simple, lightweight CSS framework designed for ease of use. Below are some examples of components you can build using KISS.</p>
     <a href="#" class="button">Get Started</a>
 </div>
+```
 
 ### Contributing
 
