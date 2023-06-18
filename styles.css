@@ -689,3 +689,782 @@ h6 {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Typography */
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+}
+
+.text-5xl {
+    font-size: 3rem;
+}
+
+/* Backgrounds */
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+
+.bg-accent {
+    background-color: var(--accent-color);
+}
+
+.bg-red {
+    background-color: var(--red-color);
+}
+
+.bg-blue {
+    background-color: var(--blue-color);
+}
+
+.bg-green {
+    background-color: var(--green-color);
+}
+
+.bg-yellow {
+    background-color: var(--yellow-color);
+}
+
+/* Borders */
+.border-primary {
+    border-color: var(--primary-color);
+}
+
+.border-secondary {
+    border-color: var(--secondary-color);
+}
+
+.border-accent {
+    border-color: var(--accent-color);
+}
+
+.border-red {
+    border-color: var(--red-color);
+}
+
+.border-blue {
+    border-color: var(--blue-color);
+}
+
+.border-green {
+    border-color: var(--green-color);
+}
+
+.border-yellow {
+    border-color: var(--yellow-color);
+}
+
+/* Flexbox */
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-col-reverse {
+    flex-direction: column-reverse;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-baseline {
+    align-items: baseline;
+}
+
+.items-stretch {
+    align-items: stretch;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+/* Display */
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.inline {
+    display: inline;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ========== Width & Height Utilities ========== */
+
+/* Width */
+.w-1 {
+    width: 10%;
+}
+
+.w-2 {
+    width: 20%;
+}
+
+.w-3 {
+    width: 30%;
+}
+
+.w-4 {
+    width: 40%;
+}
+
+.w-5 {
+    width: 50%;
+}
+
+.w-6 {
+    width: 60%;
+}
+
+.w-7 {
+    width: 70%;
+}
+
+.w-8 {
+    width: 80%;
+}
+
+.w-9 {
+    width: 90%;
+}
+
+.w-10 {
+    width: 100%;
+}
+
+/* Height */
+.h-1 {
+    height: 10%;
+}
+
+.h-2 {
+    height: 20%;
+}
+
+.h-3 {
+    height: 30%;
+}
+
+.h-4 {
+    height: 40%;
+}
+
+.h-5 {
+    height: 50%;
+}
+
+.h-6 {
+    height: 60%;
+}
+
+.h-7 {
+    height: 70%;
+}
+
+.h-8 {
+    height: 80%;
+}
+
+.h-9 {
+    height: 90%;
+}
+
+.h-10 {
+    height: 100%;
+}
+
+/* ========== Position Utilities ========== */
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.sticky {
+    position: sticky;
+}
+
+/* ========== Flex Utilities ========== */
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* ========== Font Utilities ========== */
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+/* ========== Visibility Utilities ========== */
+
+.visible {
+    visibility: visible;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+/* ========== Overflow Utilities ========== */
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+}
+
+.overflow-x-auto {
+    overflow-x: auto;
+}
+
+.overflow-y-auto {
+    overflow-y: auto;
+}
+
+/* ========== Border Utilities ========== */
+
+.border-t {
+    border-top-width: 1px;
+}
+
+.border-b {
+    border-bottom-width: 1px;
+}
+
+.border-l {
+    border-left-width: 1px;
+}
+
+.border-r {
+    border-right-width: 1px;
+}
+
+.border-0 {
+    border-width: 0;
+}
+
+.rounded-t {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.rounded-b {
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-l {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.rounded-r {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.rounded {
+    border-radius: 0.25rem;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+/* ========== Transform Utilities ========== */
+
+.scale-50 {
+    transform: scale(0.5);
+}
+
+.scale-75 {
+    transform: scale(0.75);
+}
+
+.scale-90 {
+    transform: scale(0.9);
+}
+
+.scale-100 {
+    transform: scale(1);
+}
+
+.scale-110 {
+    transform: scale(1.1);
+}
+
+.scale-125 {
+    transform: scale(1.25);
+}
+
+.scale-150 {
+    transform: scale(1.5);
+}
+
+.rotate-45 {
+    transform: rotate(45deg);
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.rotate-270 {
+    transform: rotate(270deg);
+}
+
+/* ========== Opacity Utilities ========== */
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-25 {
+    opacity: 0.25;
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
+
+.opacity-75 {
+    opacity: 0.75;
+}
+
+.opacity-100 {
+    opacity: 1;
+}
+
+/* ========== Background Blend Mode Utilities ========== */
+
+.bg-blend-normal {
+    background-blend-mode: normal;
+}
+
+.bg-blend-multiply {
+    background-blend-mode: multiply;
+}
+
+.bg-blend-screen {
+    background-blend-mode: screen;
+}
+
+.bg-blend-overlay {
+    background-blend-mode: overlay;
+}
+
+.bg-blend-darken {
+    background-blend-mode: darken;
+}
+
+.bg-blend-lighten {
+    background-blend-mode: lighten;
+}
+
+.bg-blend-color-dodge {
+    background-blend-mode: color-dodge;
+}
+
+.bg-blend-color-burn {
+    background-blend-mode: color-burn;
+}
+
+.bg-blend-hard-light {
+    background-blend-mode: hard-light;
+}
+
+.bg-blend-soft-light {
+    background-blend-mode: soft-light;
+}
+
+.bg-blend-difference {
+    background-blend-mode: difference;
+}
+
+.bg-blend-exclusion {
+    background-blend-mode: exclusion;
+}
+
+.bg-blend-hue {
+    background-blend-mode: hue;
+}
+
+.bg-blend-saturation {
+    background-blend-mode: saturation;
+}
+
+.bg-blend-color {
+    background-blend-mode: color;
+}
+
+.bg-blend-luminosity {
+    background-blend-mode: luminosity;
+}
+
+/* ========== Box Decoration Break Utilities ========== */
+
+.decoration-slice {
+    box-decoration-break: slice;
+}
+
+.decoration-clone {
+    box-decoration-break: clone;
+}
+
+/* ========== Flexbox Grid Utilities ========== */
+
+.grid-cols-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-cols-6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/* ========== Box Shadow Utilities ========== */
+
+.shadow-xs {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.shadow {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* ========== Aspect Ratio Utilities ========== */
+
+.aspect-ratio-square {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+}
+
+.aspect-ratio-16-9 {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.aspect-ratio-4-3 {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+}
+
+/* ========== Backdrop Filter Utilities ========== */
+
+.backdrop-blur {
+    backdrop-filter: blur(4px);
+}
+
+.backdrop-blur-lg {
+    backdrop-filter: blur(16px);
+}
+
+.backdrop-grayscale {
+    backdrop-filter: grayscale(100%);
+}
+
+.backdrop-sepia {
+    backdrop-filter: sepia(100%);
+}
+
+.backdrop-saturate {
+    backdrop-filter: saturate(200%);
+}
+
+.backdrop-hue-rotate {
+    backdrop-filter: hue-rotate(90deg);
+}
+
+.backdrop-invert {
+    backdrop-filter: invert(100%);
+}
+
+.backdrop-brightness {
+    backdrop-filter: brightness(50%);
+}
+
+.backdrop-contrast {
+    backdrop-filter: contrast(200%);
+}
+
+.backdrop-opacity {
+    backdrop-filter: opacity(50%);
+}
+
+/* ========== Custom Cursor Utilities ========== */
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-not-allowed {
+    cursor: not-allowed;
+}
+
+.cursor-crosshair {
+    cursor: crosshair;
+}
+
+.cursor-zoom-in {
+    cursor: zoom-in;
+}
+
+.cursor-grab {
+    cursor: grab;
+}
+
+/* ========== Text Overflow Utilities ========== */
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.overflow-ellipsis {
+    text-overflow: ellipsis;
+}
+
+.overflow-clip {
+    text-overflow: clip;
+}
+
+/* ========== Text Transform Utilities ========== */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+/* ========== Object Fit Utilities ========== */
+
+.object-contain {
+    object-fit: contain;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.object-fill {
+    object-fit: fill;
+}
+
+.object-scale-down {
+    object-fit: scale-down;
+}
+
+/* ========== Custom Transform Utilities ========== */
+
+.transform-none {
+    transform: none;
+}
+
+.scale-x-50 {
+    transform: scaleX(0.5);
+}
+
+.scale-y-50 {
+    transform: scaleY(0.5);
+}
+
+.translate-x-10 {
+    transform: translateX(10px);
+}
+
+.translate-y-10 {
+    transform: translateY(10px);
+}
+
+.skew-x-10 {
+    transform: skewX(10deg);
+}
+
+.skew-y-10 {
+    transform: skewY(10deg);
+}
+
+/* ========== Aspect Ratio Utilities ========== */
+
+.aspect-ratio-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ========== Flexbox Grid System ========== */
+
+.grid-12 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-col-1 {
+    flex: 0 0 8.33%;
+    max-width: 8.33%;
+}
+
+.grid-col-2 {
+    flex: 0 0 16.66%;
+    max-width: 16.66%;
+}
+
+.grid-col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+/*... and so on for grid-col-4 up to grid-col-12*/
+
+/* ========== 3D Transform Utilities ========== */
+
+.transform-3d {
+    perspective: 1000px;
+}
+
+.rotate-x-90 {
+    transform: rotateX(90deg);
+}
+
+.rotate-y-90 {
+    transform: rotateY(90deg);
+}
+
+.rotate-z-90 {
+    transform: rotateZ(90deg);
+}
+
+.translate-z-10 {
+    transform: translateZ(10px);
+}
