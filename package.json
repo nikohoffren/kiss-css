@@ -1,6 +1,6 @@
 {
-  "name": "kiss-css",
-  "version": "1.0.1",
+  "name": "@nikohoffren/kiss-css",
+  "version": "1.0.2",
   "description": "KISS (Keep It Simple Stylesheets) is a simple, lightweight CSS framework designed for ease of use. It provides a collection of reusable CSS classes and components to quickly style your web projects.",
   "main": "index.js",
   "scripts": {
